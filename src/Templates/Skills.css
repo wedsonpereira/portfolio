@@ -1,0 +1,9 @@
+@media (max-width:576px){
+	.add-p-2em{
+		padding:0px 1.4em;
+	}
+	.add-pt-2{
+		padding-top: 2rem;
+	}
+	
+}

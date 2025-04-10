@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+* {
+	scroll-snap-type: mandatory;
+	scroll-padding-top: 70px;
+
+}
+
+.mycontainer {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	
+	margin: auto;
+}
+
+.elements {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	height: 60vh;
+	width: 97%;
+	margin: 5em auto;
+
+}
+
+.md-box {
+	margin-top: 3rem;
+	height: 100%;
+	width: 93%;
+	display: flex;
+	line-height: 2;
+	gap: 1em;
+	justify-content: space-around;
+
+}
+
+.p-hd-1 {
+	padding: 2rem;
+	background: rgb(33, 33, 117);
+	color: white;
+	/* word-break: break-all; */
+	flex: 1;
+}
+
+.p-img-1 {
+	position: relative;
+	flex-grow: 1;
+}
+
+.cover-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.outline-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(255, 255, 255);
+	outline: 1px solid rgb(255, 255, 255);
+	padding: 0.7rem 1.5em;
+	display: none;
+	transition: 200ms ease-in-out;
+	background: #232477;
+}
+
+/* .cover-img:hover+.outline-btn {
+	display: block;
+} */
+
+/* .cover-img,
+.outline-btn:hover {
+	display: block;
+	outline-offset: 5px;
+	backdrop-filter: brightness(20%);
+} */
+
+
+.intro-project {
+	height: 85svh;
+	width: 100%;
+	position: relative;
+}
+
+.intro-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.intro-body {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro-header {
+	font-family: poppins, "Rammetto One", sans-serif;
+	font-size: 4rem;
+	font-weight: bolder;
+}
+
+.intro-header,
+.intro-desc {
+	background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.90) 100.2%);
+	color: transparent;
+	background-clip: text;
+}
+
+.rotate {
+	height: 120%;
+	color: rgb(0, 0, 0);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+}
+
+.gradient {
+	background-image: linear-gradient(58.2deg, rgba(40, 91, 212, 0.73) -3%, rgba(171, 53, 163, 0.45) 49.3%, rgba(255, 204, 112, 0.37) 97.7%);
+	border: 0.8px solid;
+	background-size: 100% 0%;
+	background-repeat: no-repeat;
+	transition: .5s ease;
+	/* position: relative;
+	bottom: 20% */
+}
+
+.gradient:hover {
+	background-size: 100% 100%;
+}
+
+@media (max-width:576px) {
+	.md-box {
+		flex-direction: column;
+		/* border: 0.2rem solid rgba(30, 30, 93, 0.462); */
+		border-radius: 1em;
+		overflow: hidden;
+	}
+}

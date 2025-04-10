@@ -1,0 +1,46 @@
+.b-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* height: max-content; */
+	/* border: 1px solid; */
+	flex-direction: column;
+	padding-top: 2em;
+	height:fit-content;
+}
+
+.Introduction{
+	width: 80%;
+	/* background: #000; */
+
+	padding: 1em;
+}
+
+h3{
+	width: 100%;
+	text-align: center;
+}
+
+.introHead{
+	margin-bottom: 0.8em;
+	letter-spacing: 2px;
+}
+
+.side-head-color-gradient{
+	color: transparent;
+	background-image: linear-gradient( 111.4deg,  rgba(7, 7, 9, 0.827) 6.5%, rgba(27,24,113,1) 93.2% );
+	background-clip: text;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+@media (max-width:576px){
+	.b-container{
+	margin-top: 2em;
+	padding-top:2.5rem;
+	}
+	.Introduction{
+		width: 97%;
+	}
+}
+

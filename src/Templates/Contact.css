@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Dela+Gothic+One&family=Exo+2:wght@100;200&family=Montserrat:wght@100;400&family=Nosifer&family=Poppins:wght@400;500&family=Work+Sans:wght@600&display=swap');
+
+*{
+	font-family: Poppins;
+	box-sizing: border-box;
+}
+
+.Acontainer{
+	display: flex;
+	width: 100%;
+	height: 80dvh;
+	align-items: center;
+	justify-content: center;
+	/* overflow: hidden; */
+	margin: auto;
+}
+
+.Bcontainer{
+	display: flex;
+	justify-content: space-evenly;
+	width: 85%;
+	height: 82%;
+	/* background: purple; */
+}
+
+@media (max-width:576px){
+	.Bcontainer{
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 3rem;
+		
+	}
+	
+	.disable{
+		display: none;
+	}
+
+	.BsubCont1{
+		width: 100% !important;
+		
+	}
+
+	.Acontainer{
+		display: flex;
+		align-items: flex-start;
+		align-content: center;
+	}
+	.i-group{
+		flex-direction: column;
+		width: 100% ;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.inputs{
+		width: 100%;
+		margin: auto 5%;
+		height: 100% !important;
+	}
+
+	.BsubCont2{
+		width: 100% !important;
+		justify-content: center !important;
+		gap: 0!important;
+		align-items: center;
+	}
+	.itags{
+		width: 90% !important;
+		border-radius: 1em !important;		
+	}
+	.subbtn{
+		border-radius: 0% !important;
+		width: 100% !important;
+		margin: .5rem auto !important;
+		padding: 1rem;
+		background: rgba(0, 128, 0, 0.688) !important
+	}
+
+	.areatext{
+		flex-direction:column;
+		align-items: flex-start !important;
+		/* border: 1px solid; */
+		width: 100% !important;
+		margin: auto 5% !important;
+		
+	}
+
+
+	textarea{
+		border-radius: 1em;
+		width: 90% !important;
+		/* margin: auto; */
+		height: 100% !important;
+				
+	}
+
+	.subbtn{
+		width: 40% !important;
+		margin: 0.5em !important;
+		border-radius: 1em !important;
+		/* height: 100% !important; */
+	}
+
+	.submit{
+		width: 90% !important;
+		margin: auto;
+		align-items: flex-start !important;
+		justify-content: flex-start !important;
+	}
+
+	.group:first-child{
+		text-align: center;
+	}
+
+	
+	
+}
+
+.BsubCont1{
+	display: flex;
+	flex-direction: column;	
+	justify-content: flex-start;
+	gap: 3em;
+	/* border: 1px solid; */
+	width: 30%;
+
+}
+
+.BsubCont2{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 3em;
+	width:40%;
+}
+
+.i-group{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.submit{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.subbtn{
+	width: 60%;
+	height: 80%;
+	border-radius: 50%;
+	background:orange;
+	border: none;
+	box-shadow: 0em 0.5em .5em rgba(56, 55, 55, 0.528);
+	transition: 100ms ease;
+}
+
+.subbtn:hover{
+	background-color: rgba(255, 47, 0, 0.8);
+	color: rgba(0, 0, 0, 0.723);
+	font-weight: bold;
+}
+
+textarea{
+	resize: none;
+	width: 100%;
+	height: 100%;
+	outline: 1px solid;
+	padding:0px 1px;
+}
+.areatext{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.itags{
+	border: 0.5px solid;
+	height: 2.4em;
+	padding: 0 3px;
+}
+
+#PhoneEmail{
+	width: 77%;
+}
+
+.areaAlign{
+	/* border: 1px solid; */
+	height:50px;
+	margin: 0;
+	padding: 0;
+}
+
+.phonebtn:focus{
+	background: rgba(36, 36, 36, 0.729);
+	color: black;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fs-a1{
+	font-size: clamp(3.4rem,576px,4.5vw);
+}

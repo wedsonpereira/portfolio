@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+.basket{
+	height:50vh;
+	width:100%;
+	margin:0;
+	padding: 0;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap: nowrap;
+	align-items: center;
+  }
+  
+  @media (max-width:576px){
+	.basket{
+		flex-direction: column;
+		gap: 0;
+		height: 90vh;
+	}
+	.hobby-box{
+		margin: 0 !important;
+		padding: 1em 0  !important;
+		border-bottom:1px solid ; 
+		width: 100% !important;
+	}
+  }  
+  
+  .hobby-box{
+	margin-top: 4em;
+	opacity:80%;
+	text-align:center;
+	padding: 3rem 1rem;
+	transition:200ms ease;
+	width: 75%;
+	height: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	color: black;
+  }
+/*   
+  .hobby-box:hover{
+	outline-offset:5px;
+	outline:4px solid blue;
+  } */
